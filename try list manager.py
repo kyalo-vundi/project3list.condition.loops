@@ -13,18 +13,18 @@ while True:
         task_list.append(task)
         print("Task added successfully")
     elif option == 2:
-        for x in task_list:
-            print("Tasks:", x)
+        for task in task_list:
+            print("Tasks:", task)
     elif option == 3:
-        for x in task_list:
-            print("Tasks:", x)
+        for task in task_list:
+            print("Tasks:", task)
         task = input("Enter the task you want to remove: ")
         task_list.remove(task)
         print("Task removed successfully")
     elif option == 4:
-        for i in range(len(task_list)):
-            if task_list[i] == task:
-                task_list[i] = "Done"
+        for task in range(len(task_list)):
+            if task_list[task] == task:
+                task_list[task] = "Done"
         if not task_list:
             print("No tasks to mark as done")
     elif option == 5:
